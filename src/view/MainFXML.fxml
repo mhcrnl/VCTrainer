@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFXMLController">
+    <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="802.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Datei">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Schließen" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Optionen" />
+          <Menu mnemonicParsing="false" text="Hilfe">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Über" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="593.0" layoutY="492.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="172.0" text="Beenden" />
+      <VBox layoutX="25.0" layoutY="78.0" prefHeight="407.0" prefWidth="232.0">
+         <children>
+            <Button fx:id="learnProcess" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="68.0" prefWidth="172.0" text="Lernfortschritt verwalten" />
+            <Button mnemonicParsing="false" prefHeight="68.0" prefWidth="172.0" text="Neue Sprache lernen" />
+            <Button mnemonicParsing="false" prefHeight="68.0" prefWidth="172.0" text="Benutzer Einstellungen" />
+            <Button mnemonicParsing="false" prefHeight="68.0" prefWidth="172.0" text="Nutzerstatistik" />
+            <Button mnemonicParsing="false" prefHeight="68.0" prefWidth="172.0" text="Credits" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <Hyperlink layoutX="342.0" layoutY="146.0" text="Zum Karteikasten" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+    </children>
+</AnchorPane>
