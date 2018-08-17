@@ -1,6 +1,7 @@
 
 package vctrainer;
 
+import data.DBController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,6 +14,8 @@ import view.GetFXMLFiles;
 
 public class VCTrainer extends Application {
     
+    private static DBController dbc;
+        
     @Override
     public void start(Stage stage) throws Exception {
         
@@ -24,13 +27,22 @@ public class VCTrainer extends Application {
         stage.setTitle("Vokabeltrainer 2018");
         stage.setScene(scene);
         stage.show();
+        
     }
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //createDB(); 
         launch(args);
+        
     }
+    
+    private static void createDB(){
+        dbc = DBController.getInstanceOfDB();
+    }
+    
+    
     
 }
